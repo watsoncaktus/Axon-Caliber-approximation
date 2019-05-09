@@ -40,6 +40,7 @@ plt.show()
 ## Let's example a z-section to see what we are dealing with:
 plt.rc("font", size=14)
 plt.figure(figsize = (8, 6))
+slice0 = df.loc[df['z'] == 0]
 plt.scatter(slice0['x'], slice0['y'], s = 0.5)
 plt.xlabel("X Coordinate (pixel/4nm)")
 plt.ylabel("Y Coordinate (pixel/4nm)")
